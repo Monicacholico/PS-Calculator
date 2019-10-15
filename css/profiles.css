@@ -1,0 +1,17 @@
+#searchAndFilter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button {
+    margin: 20px;
+}
+
+#searchByName {
+    width: 75%;
+}
+
+.card {
+    margin: 20px;
+}
+

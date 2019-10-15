@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        .invisible {
+            display: none;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 class="my-3 text-center">Add New Profile</h1>
+
+<form class="w-75 mx-auto">
+    <div class="form-group">
+        <label for="woman-profile-first-name">First name</label>
+        <input type="text" class="form-control" id="woman-profile-first-name" placeholder="First name">
+    </div>
+    <div class="form-group">
+        <label for="woman-profile-last-name">Last name</label>
+        <input type="text" class="form-control" id="woman-profile-last-name" placeholder="Last name">
+    </div>
+    <div class="form-group">
+        <label for="woman-profile-birthdate">Birth date</label>
+        <input type="date" class="form-control" id="woman-profile-birthdate" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="form-group">
+        <label for="woman-profile-living">Still Living?</label>
+        <select class="form-control" id="woman-profile-living">
+            <option>yes</option>
+            <option>no</option>
+        </select>
+    </div>
+    <div id="hidden-input" class="form-group invisible">
+        <label for="woman-profile-death">Date of death</label>
+        <input type="date" class="form-control" id="woman-profile-death" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="form-group">
+        <label for="woman-profile-blurb">Brief Bio</label>
+        <textarea class="form-control" id="woman-profile-blurb" rows="10"></textarea>
+    </div>
+
+    <button id="add-profile" type="button" class="btn btn-block btn-primary">Submit</button>
+
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="src/add-profile.js"></script>
+</body>
+</html>

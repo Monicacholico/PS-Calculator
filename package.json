@@ -1,0 +1,37 @@
+{
+  "name": "ulysses-women",
+  "version": "1.0.0",
+  "description": "collaborative website featuring women who code",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.5.1",
+    "jquery": "^3.3.1",
+    "json-server": "^0.13.0",
+    "moment": "^2.22.2",
+    "npm": "^6.1.0",
+    "promise-polyfill": "^8.0.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently 'webpack-dev-server' 'json-server -d12000 --watch db.json'",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulysses-Women/women-in-tech-website.git"
+  },
+  "author": "Ulysses Women",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ulysses-Women/women-in-tech-website/issues"
+  },
+  "homepage": "https://github.com/Ulysses-Women/women-in-tech-website#readme"
+}
