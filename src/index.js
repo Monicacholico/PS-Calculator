@@ -5,6 +5,7 @@ function getProfiles() {
 }
 
 
+
 function generateCards() {
     let html = "";
     getProfiles()
