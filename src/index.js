@@ -1,6 +1,6 @@
 
 function getProfiles() {
-    return fetch('http://localhost:3000/women')
+    return fetch('http://localhost:3000/pointeShoes')
         .then(response => response.json())
 }
 
@@ -8,14 +8,14 @@ function getProfiles() {
 function generateCards() {
     let html = "";
     getProfiles()
-        .then((women) => {
-            women.forEach((woman) => {
-                console.log(woman);
+        .then((pointeShoes) => {
+            pointeShoes.forEach((pointeShoe) => {
+                console.log(pointeShoe);
                 html +=
                     `<div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title">${woman.name}</h5>
-                        <p class="card-text">Genre: ${woman.bio}</p>
+                        <h5 class="card-title">${pointeShoe.name}</h5>
+                        <p class="card-text">Genre: ${pointeShoe.bio}</p>
                     </div>
                     </div>`
             });
@@ -26,16 +26,16 @@ function generateCards() {
 function generateRandomCard() {
     let profileHtml = "";
     getProfiles()
-        .then((women) => {
-           var randomNumber = Math.floor((Math.random() * women.length) + 1);
+        .then((pointeShoes) => {
+           var randomNumber = Math.floor((Math.random() * pointeShoes.length) + 1);
             console.log(randomNumber);
-            women.forEach((woman) => {
-                if (randomNumber === woman.id){
+            pointeShoes.forEach((pointeShoe) => {
+                if (randomNumber === pointeShoe.id){
                    profileHtml +=
                        `<div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title">${woman.name}</h5>
-                        <p class="card-text">Genre: ${woman.bio}</p>
+                        <h5 class="card-title">${pointeShoe.name}</h5>
+                        <p class="card-text">Genre: ${pointeShoe.bio}</p>
                     </div>
                     </div>`
                }

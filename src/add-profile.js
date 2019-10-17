@@ -1,11 +1,11 @@
-    const addProfile = woman => {
-        const url = 'http://localhost:3000/women';
+    const addProfile = pointeShoe => {
+        const url = 'http://localhost:3000/pointeShoes';
         const options = {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(woman),
+            body: JSON.stringify(pointeShoe),
         };
         return fetch(url, options)
             .then(response => response.json());
@@ -30,25 +30,29 @@
     $('#add-profile').on('click', function () {
         console.log("Submitting");
         addProfile({
-            firstName: capitalizeEachWord($('#woman-profile-first-name').val().toString().trim()),
-            lastName: capitalizeEachWord($('#woman-profile-last-name').val().toString().trim()),
-            birthDate: ($('#woman-profile-birthdate').val()),
-            deathDate: ($('#woman-profile-death').val()),
-            living: ($('#woman-profile-living').val()),
-            bio: ($('#woman-profile-blurb').val()),
+            name: capitalizeEachWord($('#pointe-name').val().toString().trim()),
+            brand: capitalizeEachWord($('#pointe-brand').val().toString().trim()),
+            feetType: ($('#pointe-feel-type').val()),
+            level: ($('#pointe-level').val()),
+            strength: ($('#strength-level').val()),
+            toesLength: ($('#toes-length').val()),
+            arcProfile: ($('#arc-profile').val()),
+            width: ($('#width').val()),
+            // living: ($('#woman-profile-living').val()),
+            // bio: ($('#woman-profile-blurb').val()),
         });
-        $('#woman-profile-name').val("");
-        $('#woman-profile-birthdate').val("");
+        $('#pointe-profile-name').val("");
+        $('#pointe-brand-name').val("");
         $('#woman-profile-blurb').val("");
-        $('#hidden-input').addClass('invisible');
-        $('#woman-profile-death').val("");
-        $('#woman-profile-living').prop('selectedIndex', 0);
+        // $('#hidden-input').addClass('invisible');
+        // $('#woman-profile-death').val("");
+        // $('#woman-profile-living').prop('selectedIndex', 0);
     });
 
-    const livingValue = $('#woman-profile-living').val();
-
-    $('#woman-profile-living').change(function() {
-        console.log("changed");
-        $('#hidden-input').removeClass('invisible');
-    });
+    // const livingValue = $('#woman-profile-living').val();
+    //
+    // $('#woman-profile-living').change(function() {
+    //     console.log("changed");
+    //     $('#hidden-input').removeClass('invisible');
+    // });
 
