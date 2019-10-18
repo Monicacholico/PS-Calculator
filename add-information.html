@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add profile</title>
+    <title>Add Pointe Shoe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <style>
         .invisible {
@@ -14,26 +14,63 @@
 </head>
 <body>
 
-<h1 class="my-3 text-center">Add New Profile</h1>
+<h1 class="my-3 text-center">Add New Pointe Shoe Model</h1>
 
 <form class="w-75 mx-auto">
     <div class="form-group">
-        <label for="woman-profile-first-name">First name</label>
-        <input type="text" class="form-control" id="woman-profile-first-name" placeholder="First name">
+        <label for="pointe-name">First name</label>
+        <input type="text" class="form-control" id="pointe-name" placeholder="Name">
     </div>
     <div class="form-group">
-        <label for="woman-profile-last-name">Last name</label>
-        <input type="text" class="form-control" id="woman-profile-last-name" placeholder="Last name">
+        <label for="pointe-brand">Brand</label>
+        <input type="text" class="form-control" id="pointe-brand" placeholder="Brand">
     </div>
     <div class="form-group">
-        <label for="woman-profile-birthdate">Birth date</label>
-        <input type="date" class="form-control" id="woman-profile-birthdate" placeholder="mm/dd/yyyy">
+        <label for="pointe-feel-type">Feet Type</label>
+        <select class="form-control" id="pointe-feel-type">
+            <option>Egyptian</option>
+            <option>Greek</option>
+            <option>Giselle</option>
+        </select>
     </div>
     <div class="form-group">
-        <label for="woman-profile-living">Still Living?</label>
-        <select class="form-control" id="woman-profile-living">
-            <option>yes</option>
-            <option>no</option>
+        <label for="pointe-level">Level</label>
+        <select class="form-control" id="pointe-level">
+            <option>Advanced</option>
+            <option>Intermediate</option>
+            <option>Beginner</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="strength-level">Strength</label>
+        <select class="form-control" id="strength-level">
+            <option>Strong</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="toes-length">Toes Length</label>
+        <select class="form-control" id="toes-length">
+            <option>Long</option>
+            <option>Medium</option>
+            <option>Short</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="arc-profile">Arc Profile</label>
+        <select class="form-control" id="arc-profile">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="width">Width</label>
+        <select class="form-control" id="width">
+            <option>Wide</option>
+            <option>Medium</option>
+            <option>Narrow</option>
         </select>
     </div>
     <div id="hidden-input" class="form-group invisible">
@@ -41,7 +78,7 @@
         <input type="date" class="form-control" id="woman-profile-death" placeholder="mm/dd/yyyy">
     </div>
     <div class="form-group">
-        <label for="woman-profile-blurb">Brief Bio</label>
+        <label for="woman-profile-blurb">Brief Notes</label>
         <textarea class="form-control" id="woman-profile-blurb" rows="10"></textarea>
     </div>
 
