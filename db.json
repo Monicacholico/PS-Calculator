@@ -1,14 +1,15 @@
 {
-  "women": [
+  "pointeShoes": [
     {
-      "firstName": "Grace",
-      "lastName": "Hopper",
-      "birthDate": "1906-12-09",
-      "deathDate": "1992-01-01",
-      "living": "no",
-      "bio": "computer scientist",
+      "name": "Grace",
+      "brand": "Hopper",
+      "feetType": "1906-12-09",
+      "level": "1992-01-01",
+      "strength": "no",
+      "toesLength": "computer scientist",
+      "arcProfile": "computer scientist",
+      "width": "computer scientist",
       "id": 1
-
     },
     {
       "firstName": "Another",
@@ -36,6 +37,26 @@
       "living": "yes",
       "bio": "My sister.",
       "id": 4
+    },
+    {
+      "firstName": " Monica",
+      "lastName": " Lopez",
+      "birthDate": "1978-08-13",
+      "deathDate": "",
+      "living": "yes",
+      "bio": "lorem impsum",
+      "id": 5
+    },
+    {
+      "name": " Alpha",
+      "brand": " Bloch",
+      "feetType": "Egyptian",
+      "level": "Advanced",
+      "strength": "Strong",
+      "toesLength": "Long",
+      "arcProfile": "High",
+      "width": "Narrow",
+      "id": 6
     }
   ]
 }
