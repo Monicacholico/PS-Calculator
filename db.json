@@ -57,6 +57,17 @@
       "arcProfile": "High",
       "width": "Narrow",
       "id": 6
+    },
+    {
+      "name": " Elite",
+      "brand": " Grishko",
+      "feetType": "Giselle",
+      "level": "Intermediate",
+      "strength": "Medium",
+      "toesLength": "Short",
+      "arcProfile": "Low",
+      "width": "Wide",
+      "id": 7
     }
   ]
 }
