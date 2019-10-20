@@ -31,19 +31,21 @@ const capitalizeEachWord = (input) => {
 // refactoring function with vanilla javascript
 
 const addPointe = document.getElementById('add-profile');
-const pointeName = document.getElementById('pointe-name');
-const pointeBrand = document.getElementById('pointe-brand');
-
-
-
 addPointe.addEventListener('click', function( ){
+const pointeName = document.getElementById('pointe-name');
+console.log(pointeName);
+const pointeBrand = document.getElementById('pointe-brand');
     addProfile({
-        name: capitalizeEachWord(pointeName).val().toString().trim(),
-        brand: capitalizeEachWord(pointeBrand).val().toString().trim(),
+        name: capitalizeEachWord((pointeName).valueOf().toString().trim()),
+        brand: capitalizeEachWord((pointeBrand).valueOf().toString().trim()),
 
 
     })
+    console.log("i'm working");
 })
+
+
+
 
 
 
