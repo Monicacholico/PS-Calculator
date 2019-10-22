@@ -30,28 +30,61 @@ const capitalizeEachWord = (input) => {
 
 // refactoring function with vanilla javascript
 
-const addPointe = document.getElementById('add-profile');
-addPointe.addEventListener('click', function( ){
-const pointeName = document.getElementById('pointe-name');
-console.log(pointeName);
-const pointeBrand = document.getElementById('pointe-brand');
-const pointeType = document.getElementById('pointe-feet-type');
-const pointeStrength = document.getElementById('strength-level');
-const pointeLength = document.getElementById('toes-length');
-const arc = document.getElementById('arc-profile');
-const pointeWidth = document.getElementById('width');
-    addProfile({
-        name: capitalizeEachWord((pointeName).valueOf().toString().trim()),
-        brand: capitalizeEachWord((pointeBrand).valueOf().toString().trim()),
-        feetType: capitalizeEachWord((pointeType).valueOf().toString().trim()),
-        strength: capitalizeEachWord((pointeStrength).valueOf().toString().trim()),
-        toesLength: capitalizeEachWord((pointeLength).valueOf().toString().trim()),
-        arcProfile: capitalizeEachWord((arc).valueOf().toString().trim()),
-        width: capitalizeEachWord((pointeWidth).valueOf().toString().trim()),
+function toJSONString(form){
+var pointeShoe = {};
+var elements = document.querySelectorAll('input, select, textarea');
+elements.forEach(function(element){
+    var pointeName = element.name;
+    var value = element.value;
+    var pointeBrand = element.brand;
+    var pointeType = element.feetType;
+    var pointeStrength = element.strength;
+    var pointeLength = element.toesLength;
+    var pointeArc = element.arcProfile;
+    var pointeWidth = element.width;
+    if(pointeName) {
+        pointeShoe[name] = value;
+    }
 
-    });
-    console.log("i'm working");
-})
+});
+    return JSON.stringify(pointeShoe);
+
+}
+
+const addPointe = document.getElementById('add-profile');
+
+addPointe.addEventListener('click', function(){
+    var form = document.getElementById('test');
+    form.addEventListener('submit',  function(){
+        addProfile(toJSONString(form));
+
+    })
+
+
+} );
+
+
+// addPointe.addEventListener('click', function( ){
+// const pointeName = document.getElementById('pointe-name');
+// console.log(pointeName);
+// const pointeBrand = document.getElementById('pointe-brand');
+// const pointeType = document.getElementById('pointe-feet-type');
+// const pointeStrength = document.getElementById('strength-level');
+// const pointeLength = document.getElementById('toes-length');
+// const arc = document.getElementById('arc-profile');
+// const pointeWidth = document.getElementById('width');
+//     addProfile({
+//         name: capitalizeEachWord((pointeName).valueOf().toString().trim()),
+//         brand: capitalizeEachWord((pointeBrand).valueOf().toString().trim()),
+//         feetType: capitalizeEachWord((pointeType).valueOf().toString().trim()),
+//         strength: capitalizeEachWord((pointeStrength).valueOf().toString().trim()),
+//         toesLength: capitalizeEachWord((pointeLength).valueOf().toString().trim()),
+//         arcProfile: capitalizeEachWord((arc).valueOf().toString().trim()),
+//         width: capitalizeEachWord((pointeWidth).valueOf().toString().trim()),
+//
+//     });
+//     console.log("i'm working");
+// })
 
 
 
