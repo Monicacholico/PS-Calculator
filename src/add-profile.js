@@ -35,12 +35,21 @@ addPointe.addEventListener('click', function( ){
 const pointeName = document.getElementById('pointe-name');
 console.log(pointeName);
 const pointeBrand = document.getElementById('pointe-brand');
+const pointeType = document.getElementById('pointe-feet-type');
+const pointeStrength = document.getElementById('strength-level');
+const pointeLength = document.getElementById('toes-length');
+const arc = document.getElementById('arc-profile');
+const pointeWidth = document.getElementById('width');
     addProfile({
         name: capitalizeEachWord((pointeName).valueOf().toString().trim()),
         brand: capitalizeEachWord((pointeBrand).valueOf().toString().trim()),
+        feetType: capitalizeEachWord((pointeType).valueOf().toString().trim()),
+        strength: capitalizeEachWord((pointeStrength).valueOf().toString().trim()),
+        toesLength: capitalizeEachWord((pointeLength).valueOf().toString().trim()),
+        arcProfile: capitalizeEachWord((arc).valueOf().toString().trim()),
+        width: capitalizeEachWord((pointeWidth).valueOf().toString().trim()),
 
-
-    })
+    });
     console.log("i'm working");
 })
 
@@ -49,27 +58,27 @@ const pointeBrand = document.getElementById('pointe-brand');
 
 
 
-$('#add-profile').on('click', function () {
-    console.log("Submitting");
-    addProfile({
-        name: capitalizeEachWord($('#pointe-name').val().toString().trim()),
-        brand: capitalizeEachWord($('#pointe-brand').val().toString().trim()),
-        feetType: ($('#pointe-feel-type').val()),
-        level: ($('#pointe-level').val()),
-        strength: ($('#strength-level').val()),
-        toesLength: ($('#toes-length').val()),
-        arcProfile: ($('#arc-profile').val()),
-        width: ($('#width').val()),
+// $('#add-profile').on('click', function () {
+//     console.log("Submitting");
+//     addProfile({
+//         name: capitalizeEachWord($('#pointe-name').val().toString().trim()),
+//         brand: capitalizeEachWord($('#pointe-brand').val().toString().trim()),
+//         feetType: ($('#pointe-feet-type').val()),
+//         level: ($('#pointe-level').val()),
+//         strength: ($('#strength-level').val()),
+//         toesLength: ($('#toes-length').val()),
+//         arcProfile: ($('#arc-profile').val()),
+//         width: ($('#width').val()),
         // living: ($('#woman-profile-living').val()),
         // bio: ($('#woman-profile-blurb').val()),
-    });
-    $('#pointe-profile-name').val("");
-    $('#pointe-brand-name').val("");
-    $('#woman-profile-blurb').val("");
+    // });
+    // $('#pointe-profile-name').val("");
+    // $('#pointe-brand-name').val("");
+    // $('#woman-profile-blurb').val("");
     // $('#hidden-input').addClass('invisible');
     // $('#woman-profile-death').val("");
     // $('#woman-profile-living').prop('selectedIndex', 0);
-});
+// });
 
 // const livingValue = $('#woman-profile-living').val();
 //
