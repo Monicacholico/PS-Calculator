@@ -79,7 +79,7 @@ const addPointe = document.getElementById('add-profile');
 
 
 addPointe.addEventListener('click', function( ){
-    const pointeName = document.getElementById('pointe-name').options[pointeName.selectedIndex].text;
+    const pointeName = document.getElementById('pointe-name');
     console.log(pointeName);
     const pointeBrand = document.getElementById('pointe-brand');
     const pointeType = document.getElementById('pointe-feet-type');
@@ -88,7 +88,7 @@ addPointe.addEventListener('click', function( ){
     const arc = document.getElementById('arc-profile');
     const pointeWidth = document.getElementById('width');
     addProfile({
-        name: pointeName.valueOf(),
+        // name: pointeName.options[selectedIndex].text,
         brand: pointeBrand,
         feetType: pointeType,
         strength: pointeStrength,
