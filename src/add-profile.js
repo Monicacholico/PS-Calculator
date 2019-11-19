@@ -88,7 +88,7 @@ addPointe.addEventListener('click', function( ){
     const arc = document.getElementById('arc-profile');
     const pointeWidth = document.getElementById('width');
     addProfile({
-        name: pointeName.options[selectedIndex].text,
+        name: JSON.stringify(pointeName),
         brand: pointeBrand,
         feetType: pointeType,
         strength: pointeStrength,
