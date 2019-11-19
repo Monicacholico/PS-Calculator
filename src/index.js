@@ -28,22 +28,22 @@ function generateRandomCard() {
     let profileHtml = "";
     getProfiles()
         .then((pointeShoes) => {
-            var randomNumber = Math.floor((Math.random() * pointeShoes.length) + 1);
+           var randomNumber = Math.floor((Math.random() * pointeShoes.length) + 1);
             console.log(randomNumber);
             pointeShoes.forEach((pointeShoe) => {
                 if (randomNumber === pointeShoe.id){
-                    profileHtml +=
-                        `<div class="card" >
+                   profileHtml +=
+                       `<div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">${pointeShoe.name}</h5>
                         <p class="card-text">Genre: ${pointeShoe.bio}</p>
                     </div>
                     </div>`
-                }
-            });
-            $('#featuredProfile').html(profileHtml)
+               }
+           });
+           $('#featuredProfile').html(profileHtml)
         })
-};
+    };
 
 
 // generateCards();
