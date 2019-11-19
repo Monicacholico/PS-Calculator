@@ -1,6 +1,6 @@
 
 function getProfiles() {
-    return fetch('http://localhost:3000/pointeShoes')
+    return fetch('Access-Control-Allow-Origin: *')
         .then(response => response.json())
 }
 
