@@ -8,15 +8,46 @@
 </head>
 <body>
 
+<h1>Hello World</h1>
+
 <div class="card-columns" id="featuredProfile">
 <!--<div class="card-columns" id="profileCards">-->
 
 </div>
 
+<h1>These are the pointe shoes that fit for you</h1>
+<p>name: <span id="pointeName"></span><br>
+    brand: <span id="pointeBrand"></span>
+</p>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../src/index.js"></script>
+<!--<script type="text/javascript" src="../src/index.js"></script>-->
+<script>
+    const theFile = 'http://localhost:3000/pointeShoes';
+
+    async function displayPS(){
+        const response = await fetch(theFile);
+        const data = await response.json();
+        console.log(data);
+        // const { name, brand } = data;
+        data.forEach(pointeShoe => {
+            const name = pointeShoe.name;
+            document.getElementById('pointeName').textContent = name;
+            const brand = pointeShoe.brand;
+            document.getElementById('pointeBrand').innerText = brand;
+        });
+
+        console.log(data.name);
+        console.log(data.brand);
+        // document.getElementById('pointeName').textContent = name;
+        // document.getElementById('pointeBrand').text.textContent = brand;
+    }
+
+    displayPS();
+</script>
 
 </body>
 </html>
