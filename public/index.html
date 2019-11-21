@@ -16,9 +16,11 @@
 </div>
 
 <h1>These are the pointe shoes that fit for you</h1>
-<p>name: <span id="pointeName"></span><br>
-    brand: <span id="pointeBrand"></span>
-</p>
+<!--<p>name: <span id="pointeName"></span><br>-->
+    <!--brand: <span id="pointeBrand"></span>-->
+<!--</p>-->
+<section id="psList"></section>
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -26,27 +28,64 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--<script type="text/javascript" src="../src/index.js"></script>-->
 <script>
-    const theFile = 'http://localhost:3000/pointeShoes';
 
-    async function displayPS(){
+    const theFile = 'http://localhost:3000/pointeShoes';
+    async function getData(){
         const response = await fetch(theFile);
         const data = await response.json();
-        console.log(data);
-        // const { name, brand } = data;
-        data.forEach(pointeShoe => {
-            const name = pointeShoe.name;
-            document.getElementById('pointeName').textContent = name;
-            const brand = pointeShoe.brand;
-            document.getElementById('pointeBrand').innerText = brand;
+        return data;
+    }
+
+    async function displayPS(){
+        let html ="";
+        getData()
+        .then(data => {
+            data.forEach(pointeShoe =>{
+                console.log(data);
+                html += `
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">Model: ${pointeShoe.name}</h2>
+                <h3 class="card-text">Brand: ${pointeShoe.brand}</h3>
+                </div>
+                </div>`
+            });
+            document.getElementById('psList').innerHTML = html;
         });
 
-        console.log(data.name);
-        console.log(data.brand);
+        // displayPS();
+
+
+        // const response = await fetch(theFile);
+        // const data = await response.json();
+        // console.log(data);
+        // const { name, brand } = data;
+        // data.forEach((pointeShoe) => {
+            // if(pointeShoe.name === 'Bloch'){
+            // const name = pointeShoe.name;
+            // document.getElementById('pointeName').textContent = name;
+            // const brand = pointeShoe.brand;
+            // document.getElementById('pointeBrand').innerText = brand;
+            // html += `
+            // <div class="card>
+            //     <h2>Model: ${pointeShoe.name}</h2>
+            //     <h3>Brand: ${pointeShoe.brand}</h3>
+            //     </div>`
+        // })
+
+            // document.getElementById('psList').innerText = html;
+            // }
+
+
+
+        // console.log(data.name);
+        // console.log(data.brand);
         // document.getElementById('pointeName').textContent = name;
         // document.getElementById('pointeBrand').text.textContent = brand;
     }
+    displayPS()
 
-    displayPS();
+
 </script>
 
 </body>
