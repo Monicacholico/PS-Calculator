@@ -8,7 +8,8 @@ const addProfile = pointeShoe => {
         body: JSON.stringify(pointeShoe),
     };
     return fetch(url, options)
-        .then(response => response.json());
+        .then(response => response.json())
+        .then(json => console.log(json));
 };
 
 const capitalize = (input) => {
@@ -87,13 +88,23 @@ addPointe.addEventListener('click', function( ){
     const pointeLength = document.getElementById('toes-length');
     const arc = document.getElementById('arc-profile');
     const pointeWidth = document.getElementById('width');
-    const pointeShoeCh = JSON.parse(`{"name": "${pointeName}",
-                            "brand": "${pointeBrand}",
-                            "feetType": "${pointeType}",
-                            "strength": "${pointeStrength}",
-                            "toesLength": "${pointeLength}",
-                            "arcProfile": "${arc}",
-                            "width": "${pointeWidth}"`);
+    // const pointeShoeCh = `{"name": "${pointeName}",
+    //                         "brand": "${pointeBrand}",
+    //                         "feetType": "${pointeType}",
+    //                         "strength": "${pointeStrength}",
+    //                         "toesLength": "${pointeLength}",
+    //                         "arcProfile": "${arc}",
+    //                         "width": "${pointeWidth}"`;
+    const pointeShoeCh = {
+        name: pointeName,
+        brand: pointeBrand,
+        feetType: pointeType,
+        strength: pointeStrength,
+        toesLength: pointeLength,
+        arcProfile: arc,
+        width: pointeWidth
+
+    };
     addProfile(pointeShoeCh);
     console.log('im working');
 });
