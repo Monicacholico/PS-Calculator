@@ -80,6 +80,7 @@ const addPointe = document.getElementById('add-profile');
 
 
 addPointe.addEventListener('click', function( ){
+    let pointeShoe = {};
     const pointeName = document.getElementById('pointe-name');
     console.log(pointeName);
     const pointeBrand = document.getElementById('pointe-brand');
@@ -95,17 +96,18 @@ addPointe.addEventListener('click', function( ){
     //                         "toesLength": "${pointeLength}",
     //                         "arcProfile": "${arc}",
     //                         "width": "${pointeWidth}"`;
-    const pointeShoeCh = {
-        name: pointeName,
-        brand: pointeBrand,
-        feetType: pointeType,
+    pointeShoe = {
+        name: pointeName.value,
+        brand: pointeShoe[pointeBrand].value,
+        feetType: pointeShoe[pointeType].value,
         strength: pointeStrength,
         toesLength: pointeLength,
         arcProfile: arc,
         width: pointeWidth
-
+        
     };
-    addProfile(pointeShoeCh);
+    console.log(pointeShoe.name);
+    addProfile(pointeShoe);
     console.log('im working');
 });
 
