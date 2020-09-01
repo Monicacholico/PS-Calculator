@@ -31,52 +31,10 @@ const capitalizeEachWord = (input) => {
 
 // refactoring function with vanilla javascript
 
-// function toJSONString(form){
-// var pointeShoe = {};
-// var elements = document.querySelectorAll('input, select, textarea');
-// elements.forEach(function(element){
-//     var pointeName = element.name;
-//     console.log(pointeName);
-//     var value = element.value;
-//     var pointeBrand = element.brand;
-//     var pointeType = element.feetType;
-//     var pointeStrength = element.strength;
-//     var pointeLength = element.toesLength;
-//     var pointeArc = element.arcProfile;
-//     var pointeWidth = element.width;
-//     if(pointeName) {
-//         pointeShoe[name] = value;
-//     }
-//
-// });
-//     return JSON.stringify(pointeShoe);
-//
-// }
+
 
 const addPointe = document.getElementById('add-profile');
 
-
-// addPointe.addEventListener('click', function( ){
-// const pointeName = document.getElementById('pointe-name');
-// console.log(pointeName);
-// const pointeBrand = document.getElementById('pointe-brand');
-// const pointeType = document.getElementById('pointe-feet-type');
-// const pointeStrength = document.getElementById('strength-level');
-// const pointeLength = document.getElementById('toes-length');
-// const arc = document.getElementById('arc-profile');
-// const pointeWidth = document.getElementById('width');
-//     addProfile({
-//         name: capitalizeEachWord((pointeName).valueOf().toString().trim()),
-//         brand: capitalizeEachWord((pointeBrand).valueOf().toString().trim()),
-//         feetType: capitalizeEachWord((pointeType).valueOf().toString().trim()),
-//         strength: capitalizeEachWord((pointeStrength).valueOf().toString().trim()),
-//         toesLength: capitalizeEachWord((pointeLength).valueOf().toString().trim()),
-//         arcProfile: capitalizeEachWord((arc).valueOf().toString().trim()),
-//         width: capitalizeEachWord((pointeWidth).valueOf().toString().trim()),
-//
-//     });
-//     console.log(addProfile());
-// })
 
 
 addPointe.addEventListener('click', function( ){
@@ -89,21 +47,15 @@ addPointe.addEventListener('click', function( ){
     const pointeLength = document.getElementById('toes-length');
     const arc = document.getElementById('arc-profile');
     const pointeWidth = document.getElementById('width');
-    // const pointeShoeCh = `{"name": "${pointeName}",
-    //                         "brand": "${pointeBrand}",
-    //                         "feetType": "${pointeType}",
-    //                         "strength": "${pointeStrength}",
-    //                         "toesLength": "${pointeLength}",
-    //                         "arcProfile": "${arc}",
-    //                         "width": "${pointeWidth}"`;
+
     pointeShoe = {
         name: pointeName.value,
-        brand: pointeShoe[pointeBrand].value,
-        feetType: pointeShoe[pointeType].value,
-        strength: pointeStrength,
-        toesLength: pointeLength,
-        arcProfile: arc,
-        width: pointeWidth
+        brand: pointeBrand.value,
+        feetType: pointeType.value,
+        strength: pointeStrength.value,
+        toesLength: pointeLength.value,
+        arcProfile: arc.value,
+        width: pointeWidth.value
         
     };
     console.log(pointeShoe.name);

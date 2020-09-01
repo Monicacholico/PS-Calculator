@@ -141,26 +141,13 @@
       "id": 14
     },
     {
-      "strength": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "toesLength": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "arcProfile": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "width": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
+      "name": "juliet",
+      "brand": "capulet",
+      "feetType": "Giselle",
+      "strength": "Strong",
+      "toesLength": "Medium",
+      "arcProfile": "Medium",
+      "width": "Wide",
       "id": 15
     }
   ]
