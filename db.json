@@ -149,6 +149,16 @@
       "arcProfile": "Medium",
       "width": "Wide",
       "id": 15
+    },
+    {
+      "name": "tchaika",
+      "brand": "sansha",
+      "feetType": "Greek",
+      "strength": "Strong",
+      "toesLength": "Long",
+      "arcProfile": "High",
+      "width": "Medium",
+      "id": 16
     }
   ]
 }
