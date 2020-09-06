@@ -64,6 +64,9 @@ addPointe.addEventListener('click', function( ){
 });
 
 
+const egyptianPS = pointeShoes.filter( pointeshoe => pointeshoe.feetType === 'Egyptian');
+
+console.log(egyptianPS);
 
 
 

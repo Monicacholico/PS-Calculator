@@ -1,164 +1,54 @@
 {
   "pointeShoes": [
     {
-      "name": "Grace",
-      "brand": "Hopper",
-      "feetType": "1906-12-09",
-      "level": "1992-01-01",
-      "strength": "no",
-      "toesLength": "computer scientist",
-      "arcProfile": "computer scientist",
-      "width": "computer scientist",
-      "id": 1
-    },
-    {
-      "firstName": "Another",
-      "lastName": "Woman",
-      "birthDate": "2018-05-18",
-      "deathDate": "",
-      "living": "yes",
-      "bio": "Here is another woman",
-      "id": 2
-    },
-    {
-      "firstName": "Emily",
-      "lastName": "Rodriguez",
-      "birthDate": "1987-08-20",
-      "deathDate": "",
-      "living": "yes",
-      "bio": "I live in San Antonio.",
-      "id": 3
-    },
-    {
-      "firstName": "Katie",
-      "lastName": "Bourland",
-      "birthDate": "1991-07-15",
-      "deathDate": "",
-      "living": "yes",
-      "bio": "My sister.",
-      "id": 4
-    },
-    {
-      "firstName": " Monica",
-      "lastName": " Lopez",
-      "birthDate": "1978-08-13",
-      "deathDate": "",
-      "living": "yes",
-      "bio": "lorem impsum",
-      "id": 5
-    },
-    {
-      "name": " Alpha",
-      "brand": " Bloch",
+      "name": "alpha",
+      "brand": "Bloch",
       "feetType": "Egyptian",
-      "level": "Advanced",
       "strength": "Strong",
       "toesLength": "Long",
       "arcProfile": "High",
       "width": "Narrow",
-      "id": 6
+      "id": 1
     },
     {
-      "name": " Elite",
-      "brand": " Grishko",
+      "name": "Elite",
+      "brand": "Grishko",
       "feetType": "Giselle",
-      "level": "Intermediate",
       "strength": "Medium",
       "toesLength": "Short",
       "arcProfile": "Low",
       "width": "Wide",
-      "id": 7
+      "id": 2
     },
     {
-      "name": " Balance",
-      "brand": " Bloch",
+      "name": "Balance",
+      "brand": "Bloch",
       "feetType": "Giselle",
-      "level": "Beginner",
       "strength": "Low",
       "toesLength": "Short",
       "arcProfile": "Low",
       "width": "Wide",
-      "id": 8
+      "id": 3
     },
     {
-      "name": " Balance",
-      "brand": " Bloch",
+      "name": "Recital",
+      "brand": "Sansh",
       "feetType": "Giselle",
-      "level": "Beginner",
-      "strength": "Low",
-      "toesLength": "Short",
-      "arcProfile": "Low",
-      "width": "Wide",
-      "id": 9
-    },
-    {
-      "name": " Balance",
-      "brand": " Bloch",
-      "feetType": "Giselle",
-      "level": "Beginner",
-      "strength": "Low",
-      "toesLength": "Short",
-      "arcProfile": "Low",
-      "width": "Wide",
-      "id": 10
-    },
-    {
-      "name": " Balance",
-      "brand": " Bloch",
-      "feetType": "Giselle",
-      "level": "Beginner",
-      "strength": "Low",
-      "toesLength": "Short",
-      "arcProfile": "Low",
-      "width": "Wide",
-      "id": 11
-    },
-    {
-      "name": " Balance",
-      "brand": " Bloch",
-      "feetType": "Giselle",
-      "level": "Beginner",
-      "strength": "Low",
-      "toesLength": "Short",
-      "arcProfile": "Low",
-      "width": "Wide",
-      "id": 12
-    },
-    {
-      "name": " [object Htmlinputelement]",
-      "brand": " [object Htmlinputelement]",
-      "id": 13
-    },
-    {
-      "name": " Balance",
-      "brand": " Bloch",
-      "feetType": "Giselle",
-      "level": "Beginner",
-      "strength": "Low",
-      "toesLength": "Short",
-      "arcProfile": "Low",
-      "width": "Wide",
-      "id": 14
-    },
-    {
-      "name": "juliet",
-      "brand": "capulet",
-      "feetType": "Giselle",
-      "strength": "Strong",
+      "strength": "Medium",
       "toesLength": "Medium",
       "arcProfile": "Medium",
-      "width": "Wide",
-      "id": 15
+      "width": "Medium",
+      "id": 4
     },
     {
-      "name": "tchaika",
-      "brand": "sansha",
+      "name": "Contempor",
+      "brand": "Capezio",
       "feetType": "Greek",
-      "strength": "Strong",
-      "toesLength": "Long",
-      "arcProfile": "High",
+      "strength": "Low",
+      "toesLength": "Medium",
+      "arcProfile": "Low",
       "width": "Medium",
-      "id": 16
+      "id": 5
     }
   ]
 }
