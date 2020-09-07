@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Pointe Shoe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        .invisible {
+            display: none;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 class="my-3 text-center">Add New Pointe Shoe Model</h1>
+
+<form class="w-75 mx-auto" id="test">
+    <div class="form-group">
+        <label for="dance-level">Dance Level</label>
+        <select name="dance-level" id="dance-level">
+            <option value="">Select your Dance Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advance">Advance</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="pointe-name">Feet Type</label>
+        <select name="feet-type" id="feet-type">
+            <option value="">Select your Feet type</option>
+            <option value="egyptian">Egyptian</option>
+            <option value="greek">Greek</option>
+            <option value="giselle">Giselle</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="strenght">Strength</label>
+        <select name="strength" id="strength">
+            <option value="">Select your strength</option>
+            <option value="strong">Strong</option>
+            <option value="medium">Medium</option>
+            <option value="weak">Weak</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="toes-legnth">Length of Toes</label>
+        <select class="form-control" id="length-of-toes">
+            <option value="long">Long</option>
+            <option value="regular">Regular</option>
+            <option value="short">Short</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="arch-profile">Arch Profile</label>
+        <select class="form-control" id="arc-profile">
+            <option value="">Select your Type of Arch</option>
+            <option value="high">High</option>
+            <option value="regular">Regular</option>
+            <option value="low">Low</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="strength-level">Width</label>
+        <select class="form-control" id="width-level">
+            <option value="">Select your Width</option>
+            <option value="wide">Wide</option>
+            <option value="medium">Medium</option>
+            <option value="narrow">Narrow</option>
+        </select>
+    </div>
+   
+    <div id="hidden-input" class="form-group invisible">
+        <label for="woman-profile-death">Date of death</label>
+        <input type="date" class="form-control" id="woman-profile-death" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="form-group">
+        <label for="woman-profile-blurb">Brief Notes</label>
+        <textarea class="form-control" id="woman-profile-blurb" rows="10"></textarea>
+    </div>
+
+    <button id="add-profile" type="button" class="btn btn-block btn-primary">Submit</button>
+
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="src/add-profile.js"></script>
+</body>
+</html>
