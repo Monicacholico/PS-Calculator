@@ -1,19 +1,10 @@
-
-const filterPshoe = pointeShoe => {
-    const url = 'http://localhost:3000/db.json';
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.parse(pointeShoe),
-    };
-    return fetch(url, options)
-        .then(response => response.parse.JSON())
-        .then(response => console.log(response));
-};
-filterPshoe();
-// console.log(pointeShoes[01]);
+let url = 'http://localhost:5000/db.json';
+fetch(url)
+.then(res => res.json())
+.then((out) => {
+  console.log('Checkout this JSON! ', out.pointeShoes[0]);
+})
+.catch(err => { throw err });
 
 const formwrap = document.querySelector('form');
 const options = Array.from(document.getElementsByTagName('option'));
